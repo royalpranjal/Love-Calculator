@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    tools:context="com.pranjal.randomfamousquotes.Activity.Home"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="First Person's Name"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_margin="10dp"
+        android:id="@+id/editTextName1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Second Person's Name"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextName2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:id="@+id/textViewResult"/>
+
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/progressBar"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorAccent"
+            android:textStyle="bold"
+            android:text="Calculate Love"
+            android:textColor="#FFFF"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:id="@+id/buttonCalc1ulate"
+            android:onClick="APICALL"/>
+    </RelativeLayout>
+
+</LinearLayout>
